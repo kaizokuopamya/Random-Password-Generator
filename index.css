@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --dark-black: #1C1C1C;
+    --black: #2B283A;
+    --light-green: #10B981;
+    --light-grey:#6B7280;
+    --dark-violet: #273549;
+    --white: #ffffff;
+    --dark-white: #ECFDF5;
+}
+
+body{
+    width: 100%;
+    background: var(--dark-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 35rem;
+    height: 35rem;
+    background: var(--dark-white);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
+    font-family: 'Karla', sans-serif;
+}
+
+.hero__title_green{
+    color: var(--light-green);
+}
+
+.hero__subtitle{
+    font-size: 1.25rem;
+    color: var(--light-grey);
+    margin-top: 0.6rem;
+    line-height: 28px;
+}
+
+.btn{
+    width: 14rem;
+    height: 2.65rem;
+    background: var(--light-green);
+    color: var(--dark-white);
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin-top: 3.1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.light-icon{
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+}
+
+.secondary_section{
+    margin-top: 2.1rem;
+    border-top: 1px solid #D5D4D8;
+    padding: 3rem 0;
+}
+
+.password-el{
+    width: 13rem;
+    height: 2.4rem;
+    background: var(--dark-violet);
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    color: var(--light-green);
+    text-align: center;
+}
+
+.col{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+
+div img{
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+}
+
+.password-el p{
+    color: var(--light-green);
+    line-height: 2.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width:540px){
+    .password-el{
+        width: 9rem;
+        height: 1.8rem;
+    }
+    div img{
+        top: .8rem;
+        left: 4rem;
+    }
+    .password-el p{
+        font-size: .7rem;
+        line-height: 1.7rem;
+    }
+}
