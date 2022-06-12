@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+/* creating root variables for colors */
 :root{
     --dark-black: #1C1C1C;
     --black: #2B283A;
@@ -16,7 +17,7 @@
     --white: #ffffff;
     --dark-white: #ECFDF5;
 }
-
+/* for desktop view  */
 body{
     width: 100%;
     background: var(--dark-black);
@@ -117,6 +118,7 @@ div img{
     cursor: pointer;
 }
 
+/* for mobile view */
 @media screen and (max-width:540px){
     .password-el{
         width: 9rem;
